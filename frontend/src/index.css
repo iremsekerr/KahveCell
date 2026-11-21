@@ -1,0 +1,66 @@
+:root {
+  --coffee-950: #302017;
+  --coffee-900: #3e291d;
+  --coffee-800: #5a3926;
+  --coffee-700: #744827;
+  --cream-50: #fffdf9;
+  --cream-100: #fbf6ed;
+  --cream-200: #f2e8da;
+  --orange-600: #d97732;
+  --orange-700: #bd5c25;
+  --text-primary: #39291f;
+  --text-muted: #74665a;
+  --border: #e5d9ca;
+  --success-bg: #edf5e9;
+  --success-text: #3d603c;
+  --error-bg: #fff0e9;
+  --error-text: #973f2c;
+  --card-radius: 14px;
+  --card-shadow: 0 8px 26px #3e291d0b;
+  color: var(--text-primary);
+  background: var(--cream-100);
+  font-family:
+    "Segoe UI", Aptos, "Trebuchet MS", ui-sans-serif, system-ui, sans-serif;
+  font-synthesis: none;
+  font-weight: 400;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--cream-100);
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+a {
+  color: var(--coffee-700);
+}
+
+h1 {
+  font-size: clamp(1.7rem, 3vw, 2.2rem);
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 3px solid #e8a36f;
+  outline-offset: 2px;
+}

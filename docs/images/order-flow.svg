@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 550" role="img" aria-labelledby="title description">
+  <title id="title">KahveCell sipariş yaşam döngüsü</title>
+  <desc id="description">Müşteri siparişi, kredi düşümü, QR üretimi, dükkân hazırlığı, SSE bildirimleri ve QR teslimi.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fbf6ed"/>
+      <stop offset="1" stop-color="#efe3d2"/>
+    </linearGradient>
+    <linearGradient id="header" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#442719"/>
+      <stop offset="1" stop-color="#70462d"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#c87837"/>
+    </marker>
+    <marker id="arrow-reverse" markerWidth="10" markerHeight="10" refX="2" refY="5" orient="auto">
+      <path d="M10 0L0 5L10 10Z" fill="#7a8a62"/>
+    </marker>
+    <style>
+      text { font-family: Inter, "Segoe UI", Arial, sans-serif; fill: #35251c; }
+      .title { font-size: 29px; font-weight: 750; fill: #fffaf1; }
+      .subtitle { font-size: 14px; fill: #e8d8c6; }
+      .number { font-size: 14px; font-weight: 800; fill: #fffaf1; }
+      .node-title { font-size: 16px; font-weight: 700; }
+      .node-copy { font-size: 12px; fill: #806b5a; }
+      .label { font-size: 13px; font-weight: 700; fill: #714321; }
+      .small { font-size: 12px; fill: #6d5948; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="550" rx="26" fill="url(#background)"/>
+  <rect x="0" y="0" width="1200" height="94" rx="26" fill="url(#header)"/>
+  <path d="M0 70H1200V94H0Z" fill="url(#header)"/>
+  <text class="title" x="48" y="48">KahveCell · Sipariş yaşam döngüsü</text>
+  <text class="subtitle" x="50" y="73">İlk seçimden güvenli QR teslimine kadar, rol ve kredi kontrolleriyle</text>
+
+  <g>
+    <rect x="42" y="150" width="164" height="152" rx="18" fill="#fffdf8" stroke="#e0cdb8" stroke-width="2"/>
+    <circle cx="69" cy="178" r="17" fill="#70462d"/>
+    <text class="number" x="65" y="183">1</text>
+    <text class="node-title" x="62" y="220">Paket seç</text>
+    <text class="node-copy" x="62" y="246">Aktif abonelik ve</text>
+    <text class="node-copy" x="62" y="265">kredi kontrolü</text>
+
+    <rect x="240" y="150" width="164" height="152" rx="18" fill="#fffdf8" stroke="#e0cdb8" stroke-width="2"/>
+    <circle cx="267" cy="178" r="17" fill="#70462d"/>
+    <text class="number" x="263" y="183">2</text>
+    <text class="node-title" x="260" y="220">Dükkânı seç</text>
+    <text class="node-copy" x="260" y="246">Menü ve ürün</text>
+    <text class="node-copy" x="260" y="265">tercihleri</text>
+
+    <rect x="438" y="150" width="164" height="152" rx="18" fill="#fffdf8" stroke="#e0cdb8" stroke-width="2"/>
+    <circle cx="465" cy="178" r="17" fill="#70462d"/>
+    <text class="number" x="461" y="183">3</text>
+    <text class="node-title" x="458" y="220">Sipariş oluştur</text>
+    <text class="node-copy" x="458" y="246">Sipariş kaydı ve</text>
+    <text class="node-copy" x="458" y="265">1 kredi düşümü</text>
+
+    <rect x="636" y="150" width="164" height="152" rx="18" fill="#fffdf8" stroke="#e0cdb8" stroke-width="2"/>
+    <circle cx="663" cy="178" r="17" fill="#70462d"/>
+    <text class="number" x="659" y="183">4</text>
+    <text class="node-title" x="656" y="220">İmzalı QR</text>
+    <text class="node-copy" x="656" y="246">Backend'de</text>
+    <text class="node-copy" x="656" y="265">doğrulanabilir kod</text>
+
+    <rect x="834" y="150" width="164" height="152" rx="18" fill="#fffdf8" stroke="#e0cdb8" stroke-width="2"/>
+    <circle cx="861" cy="178" r="17" fill="#70462d"/>
+    <text class="number" x="857" y="183">5</text>
+    <text class="node-title" x="854" y="220">Hazırlanıyor</text>
+    <text class="node-copy" x="854" y="246">Kabul edildi →</text>
+    <text class="node-copy" x="854" y="265">Hazırlanıyor → Hazır</text>
+
+    <rect x="1032" y="150" width="126" height="152" rx="18" fill="#fffdf8" stroke="#e0cdb8" stroke-width="2"/>
+    <circle cx="1059" cy="178" r="17" fill="#70462d"/>
+    <text class="number" x="1055" y="183">6</text>
+    <text class="node-title" x="1052" y="220">Teslim</text>
+    <text class="node-copy" x="1052" y="246">QR okut ve</text>
+    <text class="node-copy" x="1052" y="265">tamamla</text>
+  </g>
+
+  <g fill="none" stroke="#c87837" stroke-width="4" marker-end="url(#arrow)">
+    <path d="M207 226H231"/>
+    <path d="M405 226H429"/>
+    <path d="M603 226H627"/>
+    <path d="M801 226H825"/>
+    <path d="M999 226H1023"/>
+  </g>
+
+  <rect x="118" y="366" width="964" height="106" rx="20" fill="#f4eadc" stroke="#ddc8ad" stroke-width="2"/>
+  <rect x="144" y="391" width="146" height="55" rx="14" fill="#70462d"/>
+  <text x="169" y="415" font-size="14" font-weight="700" fill="#fffaf1">Dükkân</text>
+  <text x="169" y="435" font-size="12" fill="#e8d8c6">durum değiştirir</text>
+  <path d="M303 419H410" fill="none" stroke="#7a8a62" stroke-width="4" stroke-dasharray="8 7" marker-end="url(#arrow-reverse)"/>
+  <text class="label" x="333" y="400">SSE olayları</text>
+  <rect x="424" y="391" width="322" height="55" rx="14" fill="#fffdf8"/>
+  <text class="node-title" x="448" y="415">Müşteri ekranı anında güncellenir</text>
+  <text class="node-copy" x="448" y="435">Polling yok · bağlantı koparsa yeniden bağlanır</text>
+  <path d="M759 419H866" fill="none" stroke="#7a8a62" stroke-width="4" stroke-dasharray="8 7" marker-end="url(#arrow-reverse)"/>
+  <rect x="880" y="391" width="176" height="55" rx="14" fill="#e3eadc"/>
+  <text class="node-title" x="906" y="425">Afiyet olsun!</text>
+</svg>

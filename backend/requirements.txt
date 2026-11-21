@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+alembic
+pydantic-settings
+PyJWT[crypto]
+pwdlib[argon2]
+qrcode[pil]
+pytest
+httpx

@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 660" role="img" aria-labelledby="title description">
+  <title id="title">KahveCell uygulama mimarisi</title>
+  <desc id="description">React frontend, FastAPI backend, SQLite, Leaflet ve OpenStreetMap arasındaki bağlantılar.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fbf6ed"/>
+      <stop offset="1" stop-color="#efe3d2"/>
+    </linearGradient>
+    <linearGradient id="header" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#442719"/>
+      <stop offset="1" stop-color="#70462d"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#c87837"/>
+    </marker>
+    <marker id="arrow-light" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#7b6756"/>
+    </marker>
+    <style>
+      text { font-family: Inter, "Segoe UI", Arial, sans-serif; fill: #35251c; }
+      .title { font-size: 30px; font-weight: 750; fill: #fffaf1; }
+      .subtitle { font-size: 14px; fill: #e8d8c6; }
+      .card-title { font-size: 20px; font-weight: 700; }
+      .card-subtitle { font-size: 13px; fill: #806b5a; }
+      .item { font-size: 14px; font-weight: 600; }
+      .small { font-size: 12px; fill: #806b5a; }
+      .tag { font-size: 12px; font-weight: 700; fill: #714321; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="660" rx="26" fill="url(#background)"/>
+  <rect x="0" y="0" width="1200" height="94" rx="26" fill="url(#header)"/>
+  <path d="M0 70H1200V94H0Z" fill="url(#header)"/>
+  <text class="title" x="48" y="48">KahveCell · Uygulama mimarisi</text>
+  <text class="subtitle" x="50" y="73">Bağımsız React istemcisi · rol kontrollü API · gerçek zamanlı sipariş olayları</text>
+
+  <rect x="48" y="130" width="310" height="458" rx="20" fill="#fffdf8" stroke="#e0cdb8" stroke-width="2"/>
+  <rect x="48" y="130" width="310" height="72" rx="20" fill="#f3e5d5"/>
+  <path d="M48 181H358V202H48Z" fill="#f3e5d5"/>
+  <text class="card-title" x="72" y="165">React + Vite</text>
+  <text class="card-subtitle" x="72" y="187">Kullanıcı arayüzü</text>
+  <rect x="72" y="225" width="262" height="52" rx="12" fill="#fbf4e9"/>
+  <text class="item" x="92" y="257">Müşteri sayfaları</text>
+  <rect x="72" y="291" width="262" height="52" rx="12" fill="#fbf4e9"/>
+  <text class="item" x="92" y="323">Dükkân sahibi / Admin</text>
+  <rect x="72" y="357" width="262" height="52" rx="12" fill="#fbf4e9"/>
+  <text class="item" x="92" y="389">Leaflet haritası</text>
+  <rect x="72" y="423" width="262" height="52" rx="12" fill="#fbf4e9"/>
+  <text class="item" x="92" y="455">QR kodu ve kamera</text>
+  <rect x="72" y="501" width="116" height="32" rx="16" fill="#f5e1cf"/>
+  <text class="tag" x="91" y="522">REST / JSON</text>
+  <rect x="198" y="501" width="136" height="32" rx="16" fill="#f5e1cf"/>
+  <text class="tag" x="216" y="522">SSE / canlı</text>
+
+  <rect x="445" y="130" width="360" height="458" rx="20" fill="#fffdf8" stroke="#e0cdb8" stroke-width="2"/>
+  <rect x="445" y="130" width="360" height="72" rx="20" fill="#ead7c0"/>
+  <path d="M445 181H805V202H445Z" fill="#ead7c0"/>
+  <text class="card-title" x="469" y="165">FastAPI</text>
+  <text class="card-subtitle" x="469" y="187">REST API · doğrulama · yetkilendirme</text>
+  <rect x="469" y="225" width="312" height="52" rx="12" fill="#fbf4e9"/>
+  <text class="item" x="489" y="257">OTP ve JWT oturumları</text>
+  <rect x="469" y="291" width="312" height="52" rx="12" fill="#fbf4e9"/>
+  <text class="item" x="489" y="323">Dükkân / abonelik / sipariş API'leri</text>
+  <rect x="469" y="357" width="312" height="52" rx="12" fill="#fbf4e9"/>
+  <text class="item" x="489" y="389">Kredi kontrolü ve imzalı QR</text>
+  <rect x="469" y="423" width="312" height="52" rx="12" fill="#fbf4e9"/>
+  <text class="item" x="489" y="455">SSE durum olayları</text>
+  <rect x="469" y="501" width="142" height="32" rx="16" fill="#f5e1cf"/>
+  <text class="tag" x="489" y="522">SQLite / ORM</text>
+  <rect x="621" y="501" width="160" height="32" rx="16" fill="#f5e1cf"/>
+  <text class="tag" x="638" y="522">Bearer token</text>
+
+  <rect x="889" y="130" width="263" height="198" rx="20" fill="#fffdf8" stroke="#e0cdb8" stroke-width="2"/>
+  <circle cx="925" cy="169" r="13" fill="#8c5837"/>
+  <text class="card-title" x="950" y="176">SQLite</text>
+  <text class="card-subtitle" x="913" y="211">Kullanıcılar · dükkânlar</text>
+  <text class="card-subtitle" x="913" y="235">abonelikler · siparişler</text>
+  <text class="card-subtitle" x="913" y="259">yerel geliştirme veri tabanı</text>
+  <rect x="913" y="276" width="214" height="30" rx="15" fill="#f5e1cf"/>
+  <text class="tag" x="938" y="296">SQLAlchemy</text>
+
+  <rect x="889" y="362" width="263" height="226" rx="20" fill="#fffdf8" stroke="#e0cdb8" stroke-width="2"/>
+  <circle cx="925" cy="403" r="13" fill="#d77d37"/>
+  <text class="card-title" x="950" y="410">Harita servisleri</text>
+  <text class="card-subtitle" x="913" y="448">Leaflet harita bileşeni</text>
+  <text class="card-subtitle" x="913" y="472">OpenStreetMap döşemeleri</text>
+  <text class="card-subtitle" x="913" y="496">tarayıcı konum izni</text>
+  <rect x="913" y="526" width="214" height="34" rx="17" fill="#f5e1cf"/>
+  <text class="tag" x="938" y="548">Kızılay yedek konumu</text>
+
+  <path d="M358 305H435" fill="none" stroke="#c87837" stroke-width="4" marker-end="url(#arrow)"/>
+  <text class="small" x="364" y="291">istek</text>
+  <path d="M445 382H368" fill="none" stroke="#7b6756" stroke-width="3" stroke-dasharray="7 6" marker-end="url(#arrow-light)"/>
+  <text class="small" x="370" y="405">SSE durumu</text>
+  <path d="M805 245H878" fill="none" stroke="#c87837" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M889 284H816" fill="none" stroke="#7b6756" stroke-width="3" marker-end="url(#arrow-light)"/>
+  <path d="M805 475H875" fill="none" stroke="#c87837" stroke-width="3" marker-end="url(#arrow)"/>
+</svg>
